@@ -1,0 +1,214 @@
+header {
+  position: sticky;
+  top: 0rem;
+  z-index: 100;
+}
+.navbar {
+  background-color: var(--clr-bg);
+  height: 8rem;
+  /* border-bottom: 1px solid var(--clr-grey-15); */
+  padding: 2rem 3rem;
+  box-shadow: var(--lighter-shadow);
+}
+..suggestions.suggestions {
+  position: relative;
+}
+.navbar .nav-icons {
+  transition: var(--transition-medium);
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
+.navbar .nav-logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.navbar .logout-btn {
+  border-radius: 1rem;
+  color: var(--clr-grey-10);
+  border: 1px solid var(--clr-primary-5);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+/* note:SearchBar */
+.search-bar-modal {
+  position: fixed;
+  transition: var(--transition-medium);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.search-bar-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+.search-bar {
+  transition: var(--transition-medium);
+  height: 15rem;
+  background-color: var(--clr-bg);
+  position: absolute;
+  width: 100%;
+  padding: 2rem 3rem;
+  box-shadow: var(--lighter-shadow);
+  transform: translateY(-100%);
+}
+
+.search-bar.open {
+  transform: translateY(0);
+}
+.search-bar-heading {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.search-bar-center {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--clr-grey-14);
+}
+
+/* note: desktop search bar */
+.search-bar-center-desktop {
+  width: 45vw;
+  background-color: var(--clr-white-2);
+  /* padding-bottom: 0.5rem; */
+  border: 1px solid var(--clr-border);
+  padding: 0.4em 0.8em;
+  border-radius: 1em;
+}
+.search-bar-center-desktop input {
+  font-family: inherit;
+  flex-grow: 1;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--clr-input);
+}
+.search-bar-center-desktop input:focus {
+  color: var(--clr-input);
+  outline: none;
+}
+
+.search-bar-center-desktop button {
+  border: none;
+  font-size: 2rem;
+}
+.search-bar-center-desktop .btn {
+  background: none;
+  color: currentColor;
+}
+
+/*  note: desktop search bar end */
+
+.search-bar-center {
+  background-color: var(--clr-grey-10);
+  /* padding-bottom: 0.5rem; */
+  border: 1px solid var(--clr-border);
+  padding: 0.4em 0.8em;
+  border-radius: 1em;
+}
+.search-bar-center input {
+  font-family: inherit;
+  flex-grow: 1;
+  border: none;
+  font-size: 1.5rem;
+  color: black;
+  /* color: var(--clr-grey-10); */
+}
+
+.search-bar-center button {
+  border: none;
+}
+
+.search-bar-heading .close-symbol {
+  color: var(--clr-grey-10);
+  font-size: 2rem;
+}
+.search-bar-center .btn {
+  background: none;
+  color: currentColor;
+}
+.search-symbol-mobile {
+  color: var(--clr-grey-10);
+  display: none !important;
+}
+.search-bar-center input:focus {
+  /* color: var(--clr-grey-10); */
+  outline: none;
+}
+
+.suggestions {
+  position: absolute;
+  z-index: 8;
+  top: 3.8rem;
+  left: 0.8rem;
+  border-radius: 0.2rem;
+  height: fit-content;
+  max-height: 60vh;
+  width: 80%;
+  /* overflow-y: scroll; */
+  width: max-content;
+  background-color: white;
+  color: black;
+}
+.suggestions-mobile {
+  position: absolute;
+  z-index: 8;
+  top: 10.5rem;
+  left: 4rem;
+  border-radius: 0.2rem;
+  height: fit-content;
+  max-height: 60vh;
+  /* overflow-y: scroll; */
+  width: 80%;
+  background-color: white;
+  color: black;
+}
+
+.suggestion {
+  height: 3rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  overflow-y: hidden;
+  cursor: pointer;
+  padding: 2rem 1.5rem;
+  color: black;
+  transition: var(--transition-medium);
+}
+.suggestion-mobile {
+  height: 3rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  overflow-y: hidden;
+  cursor: pointer;
+  padding: 2rem 1.5rem;
+  color: black;
+  transition: var(--transition-medium);
+}
+.suggestion:hover,
+.suggestion-mobile:hover {
+  background-color: var(--clr-grey-10);
+}
+
+@media only screen and (max-width: 42.375em) {
+  .search-symbol-mobile {
+    display: flex !important;
+  }
+  .search-bar-center-desktop {
+    display: none !important;
+  }
+  .suggestions {
+    display: none;
+  }
+}
