@@ -1,32 +1,80 @@
-import React from "react";
-import { FaUser, FaSearch } from "react-icons/fa";
+import React, { useState } from "react";
+import "./Navbar.css";
+import { Link, useNavigate } from "react-router-dom";
+import { logoutUser } from "../../features/authentication/authenticationSlice";
+import { useSelector, useDispatch } from "react-redux";
+
+import { AiOutlineClose, AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 export const Navbar = () => {
+  const [search, setSearch] = useState("");
+  const dispatch = useDispatch();
+  const { authToken } = useSelector((state) => state.authentication);
+  const { videos } = useSelector((state) => state.videos);
+  const options = {
+    includeScore: true,
+    threshold: 0.2,
+    keys: ["category", "creator", "title"],
+  };
+  const navigate = useNavigate();
   return (
     <>
-      <nav className="navbar flex-nav">
-        <div className="nav-left flex-al-center ">NavBar</div>
-        <div className="nav-middle flex-al-center">
-          <form className="search-bar-center-desktop flex-al-center m-right-small">
-            <input
-              className="flex-al-center"
-              placeholder="Search for Videos Here"
-            />
-            <button className="flex-al-center" type="submit">
-              <FaSearch className="nav-icons flex" />
-            </button>
-          </form>
+      <header>
+        <div className="headerDiv">
+          <div>
+            <div className="humburger">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <h2 className="logo">APEX</h2>
+          </div>
+          <div className="searchContainer">
+            <div className="searchBox">
+              <input
+                type="text"
+                placeholder="Search for video here"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+              />
+              {search !== "" && (
+                <span
+                  className="material-symbols-rounded"
+                  onClick={() => setSearch("")}
+                >
+                  <AiOutlineClose />
+                </span>
+              )}
+            </div>
+            <div className="searchBtn">
+              <span className="material-symbols-rounded">
+                <AiOutlineSearch />
+              </span>
+            </div>
+          </div>
+          <div className="profileContainer">
+            {authToken.id ? (
+              <button
+                type="button"
+                onClick={() => {
+                  dispatch(logoutUser());
+                  navigate("/login");
+                }}
+                className="flex-al-center border-none logout-btn btn2 "
+              >
+                LOG OUT
+              </button>
+            ) : (
+              <Link to="/login" className="flex-al-center  ">
+                <span className="material-symbols-rounded">
+                  <AiOutlineUser />
+                </span>
+              </Link>
+            )}
+          </div>
         </div>
-        <div className="nav-right flex-al-center">
-          <button
-            type="submit"
-            className="flex search-symbol-mobile border-none m-right-small"
-            href="#"
-          >
-            <FaSearch className="icon-svg" />
-          </button>
-          
-        </div>
-      </nav>
+      </header>
     </>
   );
 };

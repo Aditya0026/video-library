@@ -1,1 +1,7 @@
 @import url("./Navbar/Navbar.css");
+@import url("./Sidebar//Sidebar.css");
+@import url("./NoVideosFound/NoVideosFound.css");
+@import url("./VideoCard/VideoCard.css");
+@import url("./Filter/Filter.css");
+@import url("./PlaylistModal/PlaylistModal.css");
+@import url("./PlaylistCard/PlaylistCard.css");

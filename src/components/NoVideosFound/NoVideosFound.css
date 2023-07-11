@@ -1,0 +1,16 @@
+.no-found-cta {
+  color: var(--clr-white);
+  font-weight: 600;
+}
+
+.no-found-cta:hover {
+  background-color: var(--clr-grey-10);
+}
+
+.no-found-heading {
+  margin-top: -2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
