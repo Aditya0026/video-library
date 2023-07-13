@@ -41,12 +41,12 @@
 .form-input:focus:invalid {
   border-bottom: 3px solid #ff7730;
 }
-.form-input::-webkit-input-placeholder {
+/* .form-input::-webkit-input-placeholder {
   color: #999;
-}
-.form-group:not(:last-child) {
+} */
+/* .form-group:not(:last-child) {
   margin-bottom: 2rem;
-}
+} */
 .form-label {
   font-size: 1rem;
   font-weight: 600;
