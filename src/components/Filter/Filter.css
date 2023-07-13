@@ -1,9 +1,9 @@
 .homepage-buttons {
   overflow: auto;
 }
-/* .homepage-buttons::-webkit-scrollbar {
+.homepage-buttons::-webkit-scrollbar {
   display: none;
-} */
+}
 .active.homepage-button {
   text-transform: capitalize;
   background-color: #088178;
