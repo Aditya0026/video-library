@@ -21,14 +21,9 @@ export const Navbar = () => {
       <header>
         <div className="headerDiv">
           <div>
-            <div className="humburger">
-              <div>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <h2 className="logo">APEX</h2>
+            <Link to="/">
+              <h2 className="logo">APEX</h2>
+            </Link>
           </div>
           <div className="searchContainer">
             <div className="searchBox">

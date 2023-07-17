@@ -6,7 +6,6 @@ import { useClearHistoryMutation } from "../../features/api/historyApi/historySl
 
 export const HistoryPage = () => {
   const { history } = useSelector((store) => store.history);
-  console.log(history, "asf");
   const { authToken } = useSelector((store) => store.authentication);
   return (
     <>
@@ -17,7 +16,7 @@ export const HistoryPage = () => {
             className="outer-grid flex-base"
           >
             <div className="page-heading">
-              Liked
+              History
               <span className="page-number">
                 ( {(history && history.length) || 0} )
               </span>

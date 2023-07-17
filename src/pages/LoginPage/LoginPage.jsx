@@ -28,112 +28,109 @@ export const LoginPage = ({ setSkip }) => {
   }, [guestSuccess, isLoginSuccess, navigate, setSkip]);
   return (
     <>
-      <main className="section-outer grid-center auth-section container outer-grid">
-        <form action="#" className="form form-signin">
-          <div className="m-bottom-small flex-jc-center">
-            <h3
-              className="m-bottom-small"
-              style={{ color: "white", fontSize: "2.8rem" }}
-            >
-              Login
-            </h3>
-          </div>
-          <div className="form-group">
-            <input
-              id="email"
-              name="email"
-              type="email"
-              className="form-input"
-              placeholder="Email Address"
-              //   onChange={inputUpdate}
-              required
-            />
-            <label htmlFor="email" className="form-label">
-              Email Address
-            </label>
-          </div>
-          <div className="form-group">
-            <input
-              name="password"
-              id="password"
-              type="password"
-              className="form-input"
-              placeholder="Password"
-              minLength="4"
-              //   onChange={inputUpdate}
-              required
-            />
-            <label htmlFor="password" className="form-label">
-              Password
-            </label>
-          </div>
-          <div className="form-group">
-            <div className="form-radio-group flex-nav-wrap">
-              <input
-                id="large"
-                type="checkbox"
-                className="form-radio-input"
-                name="size"
-              />
-              <label
-                htmlFor="large"
-                style={{ color: "white", fontSize: "1rem" }}
-                className="form-radio-label"
-              >
-                <span className="form-radio-button"> </span>
-                Remember Me
-              </label>
-              <Link to="/" className="form-forgot">
-                Forgot Password?
-              </Link>
+      <div className="main">
+        <main className="section-outer grid-center auth-section container outer-grid">
+          <form action="#" className="form form-signin">
+            <div className="m-bottom-small flex-jc-center">
+              <h3 className="text">Login</h3>
             </div>
-          </div>
+            <div className="form-group">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                className="form-input"
+                placeholder="Email Address"
+                //   onChange={inputUpdate}
+                required
+              />
+              <label htmlFor="email" className="form-label">
+                Email Address
+              </label>
+            </div>
+            <div className="form-group">
+              <input
+                name="password"
+                id="password"
+                type="password"
+                className="form-input"
+                placeholder="Password"
+                minLength="4"
+                //   onChange={inputUpdate}
+                required
+              />
+              <label htmlFor="password" className="form-label">
+                Password
+              </label>
+            </div>
+            <div className="form-group">
+              <div className="form-radio-group flex-nav-wrap">
+                <input
+                  id="large"
+                  type="checkbox"
+                  className="form-radio-input"
+                  name="size"
+                />
+                <label
+                  htmlFor="large"
+                  style={{ color: "white", fontSize: "1rem" }}
+                  className="form-radio-label"
+                >
+                  <span className="form-radio-button"> </span>
+                  <p className="radio-label">Remember Me</p>
+                </label>
+                <Link to="/" className="form-forgot">
+                  Forgot Password?
+                </Link>
+              </div>
+            </div>
 
-          <div className="form-group">
-            <button
-              type="submit"
-              disabled={isLoadingUser ?? isLoadingUser}
-              onClick={() => {
-                loginUser(inputState);
-              }}
-              className="btn btn-squared btn-outline-secondary w-100 spacing-medium weight-600 btn1"
-            >
-              Login
-            </button>
-            <button
-              disabled={isLoading ?? isLoading}
-              onClick={() => {
-                guestLogin();
-              }}
-              type="button"
-              className="btn btn-squared btn-outline-secondary w-100 spacing-medium weight-600 m-top-medium btn1"
-            >
-              Guest Login
-            </button>
-          </div>
-          <div className="form-footer form-group flex">
-            <p className="" style={{ color: "white", fontSize: "0.9rem" }}>
-              <span>
-                <i className="fa fa-regular fa-face-frown" />
-              </span>
-              Don't have an account ?
-              <Link
-                to="/signup"
-                id="form-signin-link"
-                href="#"
-                className="link form-footer-link m-left-smallest"
-                style={{
-                  color: "white",
-                  fontSize: "1rem",
-                  textDecoration: "none",
+            <div className="form-group">
+              <button
+                type="submit"
+                disabled={isLoadingUser ?? isLoadingUser}
+                onClick={() => {
+                  loginUser(inputState);
                 }}
+                className="btn btn-squared btn-outline-secondary w-100 spacing-medium weight-600 btn1"
               >
-                Create one
-              </Link>
-            </p>
-          </div>
-        </form>
-      </main>
+                Login
+              </button>
+              <button
+                disabled={isLoading ?? isLoading}
+                onClick={() => {
+                  guestLogin();
+                }}
+                type="button"
+                className="btn btn-squared btn-outline-secondary w-100 spacing-medium weight-600 m-top-medium btn1"
+              >
+                Guest Login
+              </button>
+            </div>
+            <div className="form-footer form-group flex">
+              <p className="" style={{ color: "white", fontSize: "0.9rem" }}>
+                <span>
+                  <i className="fa fa-regular fa-face-frown" />
+                </span>
+                Don't have an account ?
+                <Link
+                  to="/signup"
+                  id="form-signin-link"
+                  href="#"
+                  className="link form-footer-link m-left-smallest"
+                  style={{
+                    color: "white",
+                    fontSize: "1rem",
+                    textDecoration: "none",
+                  }}
+                >
+                  Create one
+                </Link>
+              </p>
+            </div>
+          </form>
+        </main>
+      </div>
     </>
   );
 };

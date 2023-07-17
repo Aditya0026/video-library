@@ -116,3 +116,26 @@
   font-weight: 600;
   color: var(--clr-red-light);
 }
+
+@media (max-width: 729px) {
+  .videoBox {
+    max-width: 40rem;
+  }
+}
+@media (max-width: 400px) {
+  .videoThumbnail {
+    height: 100%;
+    width: 96%;
+    overflow: hidden;
+  }
+  .videoInfo div h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .videoInfo div p {
+    font-size: 0.7rem;
+    color: var(--text-light-main);
+    margin: 0;
+    margin-top: -0.6rem;
+  }
+}

@@ -14,7 +14,7 @@
   background-color: var(--secondary-color);
   display: flex;
   margin-left: -0.5rem;
-  margin-top: -0.1rem;
+  margin-top: 3rem;
   padding: 10px 20px;
   overflow-x: scroll;
   position: relative;
@@ -110,4 +110,9 @@
 
 .changePadding {
   padding-left: 240px;
+}
+
+@media (max-width: 729px) {
+  .videoContainer {
+  }
 }

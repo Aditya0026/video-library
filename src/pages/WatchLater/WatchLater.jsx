@@ -30,7 +30,7 @@ export const WatchLater = () => {
                 </div>
               </NoVideosFound>
             ) : null}
-            <div className="video-grid">
+            <div className="video_grid">
               {watchLater &&
                 watchLater?.length > 0 &&
                 watchLater?.map((watchLaterVideo) => (

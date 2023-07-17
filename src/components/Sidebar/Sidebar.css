@@ -47,15 +47,8 @@
   font-size: 14px;
 }
 
-.sidebarTab.active {
-  background-color: var(--secondary-light-color);
-}
-
-.sidebarTab.active span {
-  font-variation-settings: "FILL" 1;
-}
-
-.sidebarTab:hover {
+.miniSidebarTab:active,
+.miniSidebarTab:hover {
   background-color: var(--secondary-light-color);
 }
 
@@ -71,7 +64,7 @@
   margin-left: 10px;
   margin-top: 20px;
   margin-bottom: 12px;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
 }
 
 .channelTab {
@@ -161,7 +154,7 @@
   position: fixed;
   height: 100%;
   z-index: 2;
-  padding: 60px 5px 0 5px;
+  padding: 65px 5px 0 5px;
 }
 
 .miniSidebarTab {
@@ -172,7 +165,7 @@
   flex-direction: column;
   color: var(--text-main);
   cursor: pointer;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
 }
 
 .miniSidebarTab span {
@@ -209,4 +202,10 @@
 
 .sidebarSection.close #sidebarContainer {
   display: none;
+}
+
+@media (max-width: 400px) {
+  .miniSidebarTab {
+    font-size: 1rem;
+  }
 }

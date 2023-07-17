@@ -36,3 +36,22 @@
     padding-left: 0.5em;
   }
 }
+
+@media (max-width: 400px) {
+  .homepage-button {
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: var(--clr-white-2);
+    background-color: var(--clr-bg-4);
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-right: 1em;
+    cursor: pointer;
+  }
+}

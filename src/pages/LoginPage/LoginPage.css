@@ -1,6 +1,7 @@
 .auth-section {
   min-height: 90vh;
 }
+
 .form {
   outline: 1px solid var(--clr-font);
   border-radius: 5px;
@@ -17,7 +18,7 @@
 }
 .form-input {
   font-size: 1rem;
-  font-family: inherit;
+  /* font-family: inherit; */
   padding: 0.6rem 0.8rem;
   border-radius: 0.7rem;
   background-color: var(--clr-grey-12);
@@ -130,7 +131,7 @@
 
 .btn1 {
   font-size: 1.1rem;
-  font-family: inherit;
+  /* font-family: inherit; */
   padding: 0.6rem 0.8rem;
   border-radius: 0.7rem;
   background-color: var(--clr-grey-12);
@@ -143,4 +144,102 @@
   margin-bottom: 1rem;
   font-weight: 600;
   cursor: pointer;
+}
+.text {
+  color: white;
+  font-size: 2.8rem;
+}
+
+@media (max-width: 700px) {
+  .form {
+    outline: 1px solid var(--clr-font);
+    border-radius: 5px;
+    box-shadow: var(--light-shadow);
+    width: 70%;
+    max-width: 22rem;
+    padding: 2rem;
+    transition: var(--transition);
+    transform: scale(1);
+    height: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    outline: 1px solid var(--clr-font);
+    border-radius: 5px;
+    box-shadow: var(--light-shadow);
+    width: 100%;
+    max-width: 22rem;
+    padding: 2rem;
+    transition: var(--transition);
+    transform: scale(1);
+    height: 70%;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+  .main {
+    padding-left: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .form {
+    outline: 1px solid var(--clr-font);
+    border-radius: 5px;
+    box-shadow: var(--light-shadow);
+    width: 100%;
+    max-width: 22rem;
+    padding: 2rem;
+    transition: var(--transition);
+    transform: scale(1);
+    height: 70%;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+  .main {
+    padding-left: 3.5rem;
+  }
+  .form-input {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.7rem;
+    background-color: var(--clr-grey-12);
+    border: none;
+    border-bottom: 3px solid transparent;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    transition: all 0.3s;
+    margin-bottom: -0.4rem;
+  }
+  .form-radio-label {
+    color: var(--clr-grey-10);
+    font-size: 1.3rem;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .radio-label {
+    margin-top: 0.3rem;
+  }
+  .btn1 {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.7rem;
+    background-color: var(--clr-grey-12);
+    border: none;
+    border-bottom: 3px solid transparent;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    transition: all 0.3s;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
 }

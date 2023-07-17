@@ -107,7 +107,7 @@
   border: none;
   border-radius: 0.4em;
   text-align: start;
-  font-family: poppins, "sans-serif";
+  /* font-family: poppins, "sans-serif"; */
 }
 .video-card-overlay button:hover,
 .video-card-overlay a:hover {
