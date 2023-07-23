@@ -11,7 +11,7 @@
   padding: 2rem;
   transition: var(--transition);
   transform: scale(1);
-  height: 70%;
+  height: 80%;
 }
 .form-signin.close {
   display: none;
@@ -82,7 +82,7 @@
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 14px;
 }
 .form-group button:hover {
   background-color: #088178;

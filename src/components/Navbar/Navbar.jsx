@@ -9,12 +9,7 @@ export const Navbar = () => {
   const [search, setSearch] = useState("");
   const dispatch = useDispatch();
   const { authToken } = useSelector((state) => state.authentication);
-  const { videos } = useSelector((state) => state.videos);
-  const options = {
-    includeScore: true,
-    threshold: 0.2,
-    keys: ["category", "creator", "title"],
-  };
+
   const navigate = useNavigate();
   return (
     <>
