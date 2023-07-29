@@ -91,6 +91,7 @@ export const LoginPage = ({ setSkip }) => {
                 disabled={isLoadingUser ?? isLoadingUser}
                 onClick={() => {
                   loginUser(inputState);
+                  toast.success("Logged In Successfully");
                 }}
                 className="btn btn-squared btn-outline-secondary w-100 spacing-medium weight-600 btn1"
               >
@@ -100,6 +101,7 @@ export const LoginPage = ({ setSkip }) => {
                 disabled={isLoading ?? isLoading}
                 onClick={() => {
                   guestLogin();
+                  toast.success("Logged In Successfully");
                 }}
                 type="button"
                 className="btn btn-squared btn-outline-secondary w-100 spacing-medium weight-600 m-top-medium btn1"

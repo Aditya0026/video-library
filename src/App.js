@@ -11,9 +11,13 @@ import { Home } from "./pages/Home/Home";
 import { SingleVideoPage } from "./pages/SingleVideoPage/SingleVideoPage";
 import { SignupPage } from "./pages/SignupPage/SignupPage";
 import { PlaylistVideosPage } from "./pages/PlaylistVideosPage/PlaylistVideosPage";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 function App() {
   return (
     <>
+      <ToastContainer autoClose={1500} />
+
       <Router>
         <Navbar />
         <Sidebar />

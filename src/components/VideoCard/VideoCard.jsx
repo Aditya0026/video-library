@@ -34,7 +34,7 @@ export const VideoCard = ({ video }) => {
             </button>
             {videoOverlay && (
               <ActionButtons
-                video={video}
+                singleVideo={video}
                 setPlaylistModal={setPlaylistModal}
                 setVideoOverlay={setVideoOverlay}
               />
