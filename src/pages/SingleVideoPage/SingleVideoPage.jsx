@@ -16,6 +16,7 @@ import {
   useRemoveWatchLaterMutation,
 } from "../../features/api/watchLaterApi/watchLaterApi";
 import { isPresentInState } from "../../utils/utils";
+import { MobileSidebar } from "../../components/Sidebar/MobileSidebar/MobileSidebar";
 export const SingleVideoPage = () => {
   const { videoID } = useParams();
   const { videos } = useSelector((state) => state.videos);
@@ -35,7 +36,7 @@ export const SingleVideoPage = () => {
 
   return (
     <>
-      <div className="homeContainer">
+      <div className="homeContainer_1">
         <div style={{ height: "100vh" }} className="flex-base container">
           <div className="outer-grid single-video ">
             <SingleVideoPlayer video={singleVideo} videoID={videoID} />
@@ -146,6 +147,9 @@ export const SingleVideoPage = () => {
             singleVideo={singleVideo}
           />
         )}
+        <div className="mobile">
+          <MobileSidebar />
+        </div>
       </div>
     </>
   );

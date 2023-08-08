@@ -13,8 +13,8 @@
 .categoryContainer {
   background-color: var(--secondary-color);
   display: flex;
+  margin-top: -1.2rem;
   margin-left: -0.5rem;
-  margin-top: 3rem;
   padding: 10px 20px;
   overflow-x: scroll;
   position: relative;
@@ -114,5 +114,56 @@
 
 @media (max-width: 729px) {
   .videoContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+    column-gap: 16px;
+    row-gap: 30px px;
+    margin-left: -3.7rem;
+  }
+  .categoryContainer {
+    background-color: var(--secondary-color);
+    display: flex;
+    margin-left: -4.9rem;
+    margin-top: -0.2rem;
+    padding: 10px 20px;
+    overflow-x: scroll;
+    position: relative;
+    --webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (min-width: 729px) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .categoryContainer {
+    background-color: var(--secondary-color);
+    display: flex;
+    margin-top: -0.2rem;
+    margin-left: -4.5rem;
+    padding: 10px 20px;
+    overflow-x: scroll;
+    position: relative;
+    --webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 728px) {
+  .categoryContainer {
+    background-color: var(--secondary-color);
+    display: flex;
+    margin-top: -0.2rem;
+    margin-left: -9.5rem;
+    padding: 10px 20px;
+    overflow-x: scroll;
+    position: relative;
+    --webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 680px) {
+  .categoryContainer {
+    margin-left: -4.5rem;
   }
 }

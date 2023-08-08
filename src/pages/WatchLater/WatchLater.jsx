@@ -2,15 +2,16 @@ import React from "react";
 import { NoVideosFound } from "../../components/NoVideosFound/NoVideosFound";
 import { useSelector } from "react-redux";
 import { VideoCard } from "../../components/VideoCard/VideoCard";
+import { MobileSidebar } from "../../components/Sidebar/MobileSidebar/MobileSidebar";
 export const WatchLater = () => {
   const { watchLater } = useSelector((store) => store.watchLater);
 
   return (
     <>
-      <div className="homeContainer">
+      <div className="homeContainer_1">
         <div className="flex-base flex-column container">
           <div
-            style={{ marginBottom: "1em", marginTop: "1em" }}
+            style={{ marginBottom: "1em", marginTop: "5em" }}
             className="outer-grid flex-base"
           >
             <div className="page-heading">
@@ -41,6 +42,9 @@ export const WatchLater = () => {
                 ))}
             </div>
           </div>
+        </div>
+        <div className="mobile">
+          <MobileSidebar />
         </div>
       </div>
     </>

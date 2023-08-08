@@ -3,15 +3,16 @@ import "./LikesPage.css";
 import { NoVideosFound } from "../../components/NoVideosFound/NoVideosFound";
 import { VideoCard } from "../../components/VideoCard/VideoCard";
 import { useSelector } from "react-redux";
+import { MobileSidebar } from "../../components/Sidebar/MobileSidebar/MobileSidebar";
 export const LikesPage = () => {
   const { likes } = useSelector((store) => store.likes);
 
   return (
     <>
-      <div className="homeContainer">
+      <div className="homeContainer_1">
         <div className="flex-base flex-column container ">
           <div
-            style={{ marginBottom: "1em", marginTop: "1em" }}
+            style={{ marginBottom: "1em", marginTop: "5em" }}
             className="outer-grid flex-base"
           >
             <div className="page-heading">
@@ -41,6 +42,9 @@ export const LikesPage = () => {
                 ))}
             </div>
           </div>
+        </div>
+        <div className="mobile">
+          <MobileSidebar />
         </div>
       </div>
     </>

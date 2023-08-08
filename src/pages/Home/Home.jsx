@@ -8,6 +8,7 @@ import {
   useGetVideosQuery,
 } from "../../features/api/fetchVideos/fetchVideosSlice";
 import { getCategorizedData } from "../../utils/utils";
+import { MobileSidebar } from "../../components/Sidebar/MobileSidebar/MobileSidebar";
 
 export const Home = () => {
   const { videos, categories, category } = useSelector((store) => store.videos);
@@ -35,6 +36,9 @@ export const Home = () => {
           {categorizedArray.map((video) => {
             return <VideoCard video={video} key={video.image} />;
           })}
+        </div>
+        <div className="mobile">
+          <MobileSidebar />
         </div>
       </div>
     </>

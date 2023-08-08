@@ -9,6 +9,7 @@ import {
   useGuestLoginMutation,
   useUserLoginMutation,
 } from "../../features/api/auth/authSliceApi";
+import { MobileSidebar } from "../../components/Sidebar/MobileSidebar/MobileSidebar";
 
 export const LoginPage = ({ setSkip }) => {
   const { inputState, inputUpdate } = useInput({
@@ -132,6 +133,9 @@ export const LoginPage = ({ setSkip }) => {
             </div>
           </form>
         </main>
+        <div className="mobile">
+          <MobileSidebar />
+        </div>
       </div>
     </>
   );

@@ -3,15 +3,16 @@ import "./Playlists.css";
 import { NoVideosFound } from "../../components/NoVideosFound/NoVideosFound";
 import { useSelector } from "react-redux";
 import { PlaylistCard } from "../../components/PlaylistCard/PlaylistCard";
+import { MobileSidebar } from "../../components/Sidebar/MobileSidebar/MobileSidebar";
 export const Playlists = () => {
   const { playlists } = useSelector((store) => store.playlists);
 
   return (
     <>
-      <div className="homeContainer">
+      <div className="homeContainer_1">
         <div className="flex-base flex-column container">
           <div
-            style={{ marginBottom: "1em", marginTop: "1em" }}
+            style={{ marginBottom: "1em", marginTop: "5em" }}
             className="outer-grid flex-base"
           >
             <div className="page-heading">
@@ -35,6 +36,9 @@ export const Playlists = () => {
               ))}
             </div>
           </div>
+        </div>
+        <div className="mobile">
+          <MobileSidebar />
         </div>
       </div>
     </>

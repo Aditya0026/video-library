@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 
 import { useInput } from "../../CustomHooks/CustomHooks";
 import { useUserSignupMutation } from "../../features/api/auth/authSliceApi";
+import { MobileSidebar } from "../../components/Sidebar/MobileSidebar/MobileSidebar";
 
 export const SignupPage = () => {
   const { inputState, inputUpdate } = useInput({
@@ -152,6 +153,9 @@ export const SignupPage = () => {
             </div>
           </form>
         </main>
+        <div className="mobile">
+          <MobileSidebar />
+        </div>
       </div>
     </>
   );

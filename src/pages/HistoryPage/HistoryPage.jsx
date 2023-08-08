@@ -3,16 +3,17 @@ import { NoVideosFound } from "../../components/NoVideosFound/NoVideosFound";
 import { useSelector } from "react-redux";
 import { VideoCard } from "../../components/VideoCard/VideoCard";
 import { useClearHistoryMutation } from "../../features/api/historyApi/historySlliceApi";
+import { MobileSidebar } from "../../components/Sidebar/MobileSidebar/MobileSidebar";
 
 export const HistoryPage = () => {
   const { history } = useSelector((store) => store.history);
   const { authToken } = useSelector((store) => store.authentication);
   return (
     <>
-      <div className="homeContainer">
+      <div className="homeContainer_1">
         <div className="flex-base flex-column container ">
           <div
-            style={{ marginBottom: "1em", marginTop: "1em" }}
+            style={{ marginBottom: "1em", marginTop: "5em" }}
             className="outer-grid flex-base"
           >
             <div className="page-heading">
@@ -42,6 +43,9 @@ export const HistoryPage = () => {
                 ))}{" "}
             </div>
           </div>
+        </div>
+        <div className="mobile">
+          <MobileSidebar />
         </div>
       </div>
     </>

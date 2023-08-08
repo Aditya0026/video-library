@@ -204,8 +204,15 @@
   display: none;
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .miniSidebarTab {
     font-size: 1rem;
   }
+} */
+@media (max-width: 729px) {
+  .miniSidebarTab {
+    display: none;
+  }
+}
+@media (max-width: 729px) {
 }

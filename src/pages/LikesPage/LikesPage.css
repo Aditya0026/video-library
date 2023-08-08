@@ -1,4 +1,4 @@
-.homeContainer {
+.homeContainer_1 {
   position: relative;
   padding-top: 0.9px;
   padding-left: 4.375rem;
@@ -30,9 +30,11 @@
   justify-content: center;
 }
 .video_grid {
-  gap: 1rem;
-  display: flex;
+  grid-gap: 1em;
+  display: grid;
   gap: 1em;
+  grid-template-columns: repeat(3, 25vw);
+  justify-content: space-around;
   padding: 1em;
 }
 
@@ -54,4 +56,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 729px) {
+  .homeContainer_1 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .video_grid {
+    grid-template-columns: repeat(2, 40vw);
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .video_grid {
+    grid-template-columns: repeat(1, 100vw);
+  }
 }
