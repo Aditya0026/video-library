@@ -73,11 +73,7 @@ export const LoginPage = ({ setSkip }) => {
                     className="form-radio-input"
                     name="size"
                   />
-                  <label
-                    htmlFor="large"
-                    style={{ color: "white", fontSize: "1rem" }}
-                    className="form-radio-label"
-                  >
+                  <label htmlFor="large" className="form-radio-label">
                     <span className="form-radio-button"> </span>
                     <p className="radio-label">Remember Me</p>
                   </label>
@@ -112,7 +108,7 @@ export const LoginPage = ({ setSkip }) => {
                 </button>
               </div>
               <div className="form-footer form-group flex">
-                <p className="" style={{ color: "white", fontSize: "0.9rem" }}>
+                <p className="">
                   <span>
                     <i className="fa fa-regular fa-face-frown" />
                   </span>
@@ -122,11 +118,6 @@ export const LoginPage = ({ setSkip }) => {
                     id="form-signin-link"
                     href="#"
                     className="link form-footer-link m-left-smallest"
-                    style={{
-                      color: "white",
-                      fontSize: "1rem",
-                      textDecoration: "none",
-                    }}
                   >
                     Create one
                   </Link>

@@ -15,7 +15,7 @@ export const PlaylistVideosPage = () => {
 
   return (
     <>
-      <div className="homeContainer">
+      <div className="homeContainer_1">
         <div className="flex-base flex-column ">
           <div
             style={{ marginBottom: "1em", marginTop: "1em" }}
@@ -34,7 +34,7 @@ export const PlaylistVideosPage = () => {
             ) : (
               ""
             )}
-            <div className="video-grid ">
+            <div className="video_grid ">
               {playlist.videos?.length > 0 &&
                 playlist.videos?.map((playlistVideo) => (
                   <VideoCard key={playlistVideo._id} video={playlistVideo} />

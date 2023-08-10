@@ -49,12 +49,7 @@ export const SignupPage = () => {
         <main className="section-outer grid-center auth-section container outer-grid">
           <form action="#" className="form form-signup">
             <div className="m-bottom-small flex-jc-center">
-              <h3
-                style={{ color: "white", fontSize: "2rem" }}
-                className="m-bottom-small"
-              >
-                Sign Up
-              </h3>
+              <h3 className="m-bottom-small">Sign Up</h3>
             </div>
             <div className="form-group flex">
               <a href="#">

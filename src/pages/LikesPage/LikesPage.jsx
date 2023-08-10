@@ -12,7 +12,7 @@ export const LikesPage = () => {
       <div className="homeContainer_1">
         <div className="flex-base flex-column container ">
           <div
-            style={{ marginBottom: "1em", marginTop: "6.5em" }}
+            style={{ marginBottom: "1em", marginTop: "5em" }}
             className="outer-grid flex-base"
           >
             <div className="page-heading">

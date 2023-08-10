@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { logoutUser } from "../../features/authentication/authenticationSlice";
 import { useSelector, useDispatch } from "react-redux";
-
+import { CiLogout } from "react-icons/ci";
 import { AiOutlineClose, AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 export const Navbar = () => {
   const [search, setSearch] = useState("");

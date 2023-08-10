@@ -102,7 +102,9 @@ a {
 .profileTab span {
   font-size: 30px;
 }
-
+.mobo {
+  display: none;
+}
 .profileTab p {
   margin: 0;
   font-size: 15px;
@@ -157,5 +159,20 @@ a {
     cursor: pointer;
     font-weight: 400;
     font-size: 0.6rem;
+  }
+}
+@media (max-width: 400px) {
+  .btn2 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #088178;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 0.4rem;
+  }
+  .headeDiv {
+    margin-right: -4rem;
   }
 }
