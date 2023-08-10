@@ -37,7 +37,7 @@ export const SingleVideoPage = () => {
   return (
     <>
       <div className="homeContainer_1">
-        <div style={{ height: "100vh" }} className="flex-base container">
+        <div  className="flex-base container">
           <div className="outer-grid single-video ">
             <SingleVideoPlayer video={singleVideo} videoID={videoID} />
             <div className="flex-base flex-column single-video-main">
