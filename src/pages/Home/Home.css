@@ -13,7 +13,7 @@
 .categoryContainer {
   background-color: var(--secondary-color);
   display: flex;
-  margin-top: -1.2rem;
+  margin-top: 1rem;
   margin-left: -0.5rem;
   padding: 10px 20px;
   overflow-x: scroll;

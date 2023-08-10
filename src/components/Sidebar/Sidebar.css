@@ -154,7 +154,7 @@
   position: fixed;
   height: 100%;
   z-index: 2;
-  padding: 65px 5px 0 5px;
+  padding: 85px 5px 0 5px;
 }
 
 .miniSidebarTab {
@@ -212,6 +212,10 @@
 @media (max-width: 729px) {
   .miniSidebarTab {
     display: none;
+    padding: 0;
+  }
+  .miniSidebar {
+    padding: 0;
   }
 }
 @media (max-width: 729px) {

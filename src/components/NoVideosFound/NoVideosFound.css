@@ -13,4 +13,18 @@
   font-weight: 600;
 }
 
-
+@media (max-width: 729px) {
+  .no-found-heading {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .no-found-heading {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .no-found-heading {
+    font-size: 0.8rem;
+  }
+}

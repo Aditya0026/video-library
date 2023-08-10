@@ -75,3 +75,19 @@
     grid-template-columns: repeat(1, 100vw);
   }
 }
+
+@media (max-width: 729px) {
+  .btn_1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .btn_1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .btn_1 {
+    font-size: 0.8rem;
+  }
+}

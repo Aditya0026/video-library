@@ -11,7 +11,7 @@
   padding: 2rem;
   transition: var(--transition);
   transform: scale(1);
-  height: 80%;
+  height: 70%;
 }
 .form-signin.close {
   display: none;
@@ -147,9 +147,11 @@
 }
 .text {
   color: white;
-  font-size: 2.8rem;
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 1rem;
 }
-
+/*
 @media (max-width: 700px) {
   .form {
     outline: 1px solid var(--clr-font);
@@ -162,8 +164,8 @@
     transform: scale(1);
     height: 70%;
   }
-}
-@media (max-width: 600px) {
+} */
+/* @media (max-width: 600px) {
   .form {
     outline: 1px solid var(--clr-font);
     border-radius: 5px;
@@ -181,9 +183,9 @@
   .main {
     padding-left: 2.5rem;
   }
-}
+} */
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .form {
     outline: 1px solid var(--clr-font);
     border-radius: 5px;
@@ -242,4 +244,4 @@
     font-weight: 600;
     cursor: pointer;
   }
-}
+} */
