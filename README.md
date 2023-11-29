@@ -28,10 +28,10 @@ React, Redux-toolkit, RTK-query, Vanilla CSS and Auth using JWT
 
 
 ## Features
--Like/dislike videos, add/remove to watch later
--Create playlists and add videos to playlists
--Filter videos by tags
--History of watched videos
+. Like/dislike videos, add/remove to watch later
+. Create playlists and add videos to playlists
+. Filter videos by tags
+. History of watched videos
 
 ### Connect With Me
 
