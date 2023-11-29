@@ -29,8 +29,10 @@ React, Redux-toolkit, RTK-query, Vanilla CSS and Auth using JWT
 
 ## Features
 <ul>
-  <li> Add products to cart or wishlist</li>
-    <li> Add products to cart or wishlist</li>
+  <li>Like/dislike videos, add/remove to watch later</li>
+    <li>Create playlists and add videos to playlists</li>
+    <li>Filter videos by tags</li>
+    <li>History of watched videos</li>
 
   
 </ul>
