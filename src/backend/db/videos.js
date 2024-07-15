@@ -8,12 +8,12 @@ export const videos = [
     img: "https://i.ytimg.com/vi/nd7hdNyK7cE/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDnTCwKJkSUJm1qNw9ZHNehU7Ck4g",
   },
   {
-    _id: "fbO_0AbkUOg",
-    title: "Barcelona vs Real Madrid 1-3  ",
+    _id: "Ip3VRAV0PXw",
+    title: "Spain 2 - 1 England | Highlights",
     creator: "Football",
     category: "Football",
-    logo: "https://yt3.googleusercontent.com/fRTh6Q0FUUZ50HFjtiUw_5DeDhQy87dhpUOdLzPySHsZXipNu3lpD4R9oxyKUzXY_DDUVPZB=s176-c-k-c0x00ffffff-no-rj",
-    img: "https://i.ytimg.com/vi/NuG1ci3CNUc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAFzPciL_pYnApCOLZs0pQbsm9yZw",
+    logo: "https://res.cloudinary.com/ddlpde95c/image/upload/v1721057470/Screenshot_2024-07-15_at_9.00.48_PM_spq6bb.png",
+    img: "https://res.cloudinary.com/ddlpde95c/image/upload/v1721057470/Screenshot_2024-07-15_at_9.00.48_PM_spq6bb.png"
   },
   {
     _id: "qQQcepP3ctQ",
@@ -104,12 +104,12 @@ export const videos = [
     img: "https://i.ytimg.com/vi/8iXHBo_c0YA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBtz0MT3Eils-xr2nypVzaBbfsQ0w",
   },
   {
-    _id: "90DbbceNqF0",
-    title: "Manchester City 1 - 0 Inter Milan ",
+    _id: "oaHQz4LAwo",
+    title: "Spain 2 - 1 France | Highlights",
     creator: "Football",
     category: "Football",
-    logo: "https://i.ytimg.com/vi/I5EcnXH0Ntc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2hXZ2B0EezW5hgE9uIP9Qv4Nbzg",
-    img: "https://i.ytimg.com/vi/90DbbceNqF0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCejIjBDm-jYn7qss2fKid5Fynhqw",
+    logo: "https://res.cloudinary.com/ddlpde95c/image/upload/v1721057762/Screenshot_2024-07-15_at_9.05.29_PM_armaz6.png",
+    img: "https://res.cloudinary.com/ddlpde95c/image/upload/v1721057762/Screenshot_2024-07-15_at_9.05.29_PM_armaz6.png",
   },
   {
     _id: "TFy6ldA4-Xs",
@@ -127,12 +127,12 @@ export const videos = [
     img: "https://i.ytimg.com/vi/c3rZsfQkQkM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEGdtIZ_jRppm3uua9b7Oe8lIwLQ",
   },
   {
-    _id: "KVI2gvZCVrQ",
-    title: "FINAL Match | ARG 3:3 FRA",
+    _id: "bVd90yqSYHs",
+    title: "Portugal VS France (3 - 5 Penalties)",
     creator: "Football",
     category: "Football",
-    logo: "https://i.ytimg.com/vi/I5EcnXH0Ntc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2hXZ2B0EezW5hgE9uIP9Qv4Nbzg",
-    img: "https://i.ytimg.com/vi/KVI2gvZCVrQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDAY7A_AAPkEv6p-OgFeDIHc6C2lA",
+    logo: "https://res.cloudinary.com/ddlpde95c/image/upload/v1721057975/Screenshot_2024-07-15_at_9.08.00_PM_etwjr1.png",
+    img: "https://res.cloudinary.com/ddlpde95c/image/upload/v1721057975/Screenshot_2024-07-15_at_9.08.00_PM_etwjr1.png",
   },
   {
     _id: "We74qn8U3c0",

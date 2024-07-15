@@ -11,7 +11,7 @@
   padding: 1rem;
   transition: var(--transition);
   transform: scale(1);
-  height: 68%;
+  height: 85%;
 }
 .form-signin.close {
   display: none;
